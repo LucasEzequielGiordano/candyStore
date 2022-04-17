@@ -50,33 +50,8 @@ header h1 {
     cursor: pointer;
 }
 
-.containerIcons input {
-    width: 50%;
-    border: none;
-    background-color: transparent;
-    border-bottom: 2px solid var(--color1);
-}
-
-.containerIcons input::placeholder {
-    color: var(--color2);
-}
-
-.containerIcons input:focus {
-    color: var(--color2);
-}
-
-.containerIcons .imgSearch {
-    height: 20px;
-    transform: translateX(-25px);
-    -o-transform: translateX(-25px);
-    -ms-transform: translateX(-25px);
-    -moz-transform: translateX(-25px);
-    -webkit-transform: translateX(-25px);
-    cursor: pointer;
-}
-
 .containerIcons .imgCart {
-    height: 20px;
+    height: 40px;
     cursor: pointer;
 }
 
@@ -86,6 +61,8 @@ main {
     width: 100%;
     background-color: var(--color4);
     display: flex;
+    flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
     align-items: flex-start;
     -ms-flex-align: start;
     justify-content: center;
@@ -186,4 +163,11 @@ main .stock div {
     flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     gap: 3%;
+}
+
+/* cart */
+.cart {
+    height: 100%;
+    width: 20%;
+    background-color: var(--color1);
 }
