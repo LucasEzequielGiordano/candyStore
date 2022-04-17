@@ -42,5 +42,8 @@ function catalogSweets() {
     // printDivCart();
 }
 
+// realizar funcion de que le pasa a la card si no hay stock (se pone toda gris y bloquear el click)
+// function noStock() {} 
+
 // code start
 catalogSweets()

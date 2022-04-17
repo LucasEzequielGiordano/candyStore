@@ -14,18 +14,18 @@ class Sweet {
 // array declaration
 let sweets = []
 // Push data arrays
-sweets.push(new Sweet(0, "Dos Corazones", 80, "./img/Dos-Corazones.jpg", Math.floor(Math.random() * 11)));
-sweets.push(new Sweet(1, "Mogul Gomitas", 60, "./img/Mogul-Gomitas.jpg", Math.floor(Math.random() * 11)));
-sweets.push(new Sweet(2, "Ferrero Rocher", 250, "./img/Ferrero-Rocher.jpg", Math.floor(Math.random() * 11)));
-sweets.push(new Sweet(3, "Shot Bloque", 160, "./img/Shot-Bloque-Chocolate.webp", Math.floor(Math.random() * 11)));
-sweets.push(new Sweet(4, "Kinder", 255, "./img/Kinder-Chocolate.jpeg", Math.floor(Math.random() * 11)));
-sweets.push(new Sweet(5, "Jorgito Alfajor", 85, "./img/Jorgito-Alfajor.jpg", Math.floor(Math.random() * 11)));
-sweets.push(new Sweet(6, "Milka", 310, "./img/Milka-Chocolate.png", Math.floor(Math.random() * 11)));
-sweets.push(new Sweet(7, "Pepitos Alfajor", 150, "./img/Pepitos-Alfajor.jpg", Math.floor(Math.random() * 11)));
-sweets.push(new Sweet(8, "Bon o Bon", 55, "./img/Bon-o-Bon.jpg", Math.floor(Math.random() * 11)));
-sweets.push(new Sweet(9, "Aguila Amargo", 430, "./img/aguilaChocolate.jpg", Math.floor(Math.random() * 11)));
-sweets.push(new Sweet(10, "Rocklets", 97, "./img/rocklets.webp", Math.floor(Math.random() * 11)));
-sweets.push(new Sweet(11, "Hamlet", 52, "./img/hamlet.webp", Math.floor(Math.random() * 11)));
+sweets.push(new Sweet(0, "Dos Corazones", randomPrice(85, 105), "./img/Dos-Corazones.jpg", randomStock()));
+sweets.push(new Sweet(1, "Mogul Gomitas", randomPrice(60, 80), "./img/Mogul-Gomitas.jpg", randomStock()));
+sweets.push(new Sweet(2, "Ferrero Rocher", randomPrice(250, 270), "./img/Ferrero-Rocher.jpg", randomStock()));
+sweets.push(new Sweet(3, "Shot Bloque", randomPrice(160, 180), "./img/Shot-Bloque-Chocolate.webp", randomStock()));
+sweets.push(new Sweet(4, "Kinder", randomPrice(255, 275), "./img/Kinder-Chocolate.jpeg", randomStock()));
+sweets.push(new Sweet(5, "Jorgito Alfajor", randomPrice(85, 105), "./img/Jorgito-Alfajor.jpg", randomStock()));
+sweets.push(new Sweet(6, "Milka", randomPrice(310, 330), "./img/Milka-Chocolate.png", randomStock()));
+sweets.push(new Sweet(7, "Pepitos Alfajor", randomPrice(150, 170), "./img/Pepitos-Alfajor.jpg", randomStock()));
+sweets.push(new Sweet(8, "Bon o Bon", randomPrice(55, 75), "./img/Bon-o-Bon.jpg", randomStock()));
+sweets.push(new Sweet(9, "Aguila Amargo", randomPrice(430, 450), "./img/aguilaChocolate.jpg", randomStock()));
+sweets.push(new Sweet(10, "Rocklets", randomPrice(97, 117), "./img/rocklets.webp", randomStock()));
+sweets.push(new Sweet(11, "Hamlet", randomPrice(52, 72), "./img/hamlet.webp", randomStock()));
 console.log(sweets)
 
 // method statement
@@ -42,4 +42,14 @@ function removeSweetUnit(sweet) {
 // function to update the total price of the candy
 function updateTotalPriceSweet(sweet) {
     sweet.totalPrice = sweet.price * sweet.quantity;
+}
+
+// function to calculate a random value in the price in a range of 20 numbers between min and max
+function randomPrice(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
+}
+
+// function to calculate a random value in the stock
+function randomStock() {
+    return Math.floor(Math.random() * 11)
 }

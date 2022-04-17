@@ -25,8 +25,30 @@
     </header>
     <!-- main -->
     <main>
-        <!-- <h2></h2> -->
-        <div class="containerFilter" id="containerFilter">vdv</div>
+        <div class="containerFilter" id="containerFilter">
+            <div class="title">
+                <h2>Filter Products</h2>
+            </div><br>
+            <!-- filter by price -->
+            <div class="filterPrice">
+                <h3>Price:</h3>
+                <ul>
+                    <li><input type="checkbox" id="checkPrice100">$-100</li>
+                    <li><input type="checkbox" id="checkPrice250">$-250</li>
+                    <li><input type="checkbox" id="checkPrice400">$-400</li>
+                </ul>
+                <button class="btn btn-dark">Filter</button>
+            </div>
+            <!-- filter by stock -->
+            <div class="filterStock">
+                <h3>Stock</h3>
+                <ul>
+                    <li><input type="checkbox" id="checkStock">Stock</li>
+                    <li><input type="checkbox" id="checkNoStock">No Stock</li>
+                </ul>
+                <button class="btn btn-dark">Filter</button>
+            </div>
+        </div>
         <div class="stock" id="stock"></div>
     </main>
 
@@ -40,6 +62,7 @@
     <!-- scripts JS -->
     <script src="js/data.js"></script>
     <script src="js/storage.js"></script>
+    <script src="js/filter.js"></script>
     <script src="js/app.js"></script>
 </body>
 

@@ -19,6 +19,7 @@
     --color1: #005240;
     --color2: #c7fceb;
     --color3: #508072;
+    --color4: #fff;
 }
 
 /* styles */
@@ -50,6 +51,7 @@ header h1 {
 }
 
 .containerIcons input {
+    width: 50%;
     border: none;
     background-color: transparent;
     border-bottom: 2px solid var(--color1);
@@ -82,8 +84,23 @@ header h1 {
 main {
     height: 200%;
     width: 100%;
-    background-color: var(--color2);
+    background-color: var(--color4);
     display: flex;
+    align-items: flex-start;
+    -ms-flex-align: start;
+    justify-content: center;
+    -ms-flex-line-pack: center;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+}
+
+/* filter */
+main .containerFilter {
+    height: 50%;
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    -ms-flex-direction: row;
     align-items: center;
     -ms-flex-align: center;
     justify-content: center;
@@ -92,11 +109,66 @@ main {
     -ms-flex-wrap: wrap;
 }
 
-main .containerFilter {
-    width: 25%;
-    background-color: var(--color0);
+.containerFilter .title {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    -ms-flex-align: end;
+    justify-content: center;
+    -ms-flex-line-pack: center;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
 }
 
+.title h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.containerFilter .filterPrice {
+    height: 45%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    align-items: center;
+    -ms-flex-align: center;
+    justify-content: center;
+    -ms-flex-line-pack: center;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+}
+
+.containerFilter .filterStock {
+    height: 45%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    align-items: center;
+    -ms-flex-align: center;
+    justify-content: flex-start;
+    -ms-flex-line-pack: start;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+}
+
+.containerFilter ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    align-items: self-start;
+    -ms-flex-align: baseline;
+    justify-content: center;
+    -ms-flex-line-pack: center;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    align-content: center;
+}
+
+/* stock */
 main .stock {
     width: 65%;
     display: flex;
@@ -104,6 +176,7 @@ main .stock {
 }
 
 main .stock div {
+    background-color: transparent;
     width: 100%;
     display: flex;
     align-items: center;
