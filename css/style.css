@@ -1,0 +1,116 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    list-style: none;
+}
+
+/* variables */
+:root {
+    --color0: #ff7ae8;
+    --color1: #005240;
+    --color2: #c7fceb;
+    --color3: #508072;
+}
+
+/* styles */
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+/* header */
+header {
+    height: 10%;
+    background-color: var(--color3);
+    display: flex;
+    align-items: center;
+    -ms-flex-align: center;
+    justify-content: space-around;
+    -ms-flex-line-pack: distribute;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+}
+
+header h1 {
+    font-size: clamp(20px, 100%, 40px);
+    color: var(--color2);
+    cursor: pointer;
+}
+
+.containerIcons input {
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid var(--color1);
+}
+
+.containerIcons input::placeholder {
+    color: var(--color2);
+}
+
+.containerIcons input:focus {
+    color: var(--color2);
+}
+
+.containerIcons .imgSearch {
+    height: 20px;
+    transform: translateX(-25px);
+    -o-transform: translateX(-25px);
+    -ms-transform: translateX(-25px);
+    -moz-transform: translateX(-25px);
+    -webkit-transform: translateX(-25px);
+    cursor: pointer;
+}
+
+.containerIcons .imgCart {
+    height: 20px;
+    cursor: pointer;
+}
+
+/* main */
+main {
+    height: 200%;
+    width: 100%;
+    background-color: var(--color2);
+    display: flex;
+    align-items: center;
+    -ms-flex-align: center;
+    justify-content: center;
+    -ms-flex-line-pack: center;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+}
+
+main .containerFilter {
+    width: 25%;
+    background-color: var(--color0);
+}
+
+main .stock {
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+}
+
+main .stock div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    -ms-flex-align: center;
+    justify-content: center;
+    -ms-flex-line-pack: center;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    gap: 3%;
+}
