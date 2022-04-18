@@ -14,7 +14,6 @@ function createStringCatalog() {
         </div>
         `;
     }
-    // addToCart()
     return string;
 }
 
@@ -25,8 +24,6 @@ function catalogSweets() {
     card.innerHTML = createStringCatalog();
     stock.appendChild(card);
     createFilter()
-    // addToCart()
-    // printDivCart();
 }
 
 // code start
