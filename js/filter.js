@@ -6,7 +6,7 @@ function createFilter() {
     const main = document.querySelector("main")
     containerFilter.innerHTML = `
         <div class="title">
-            <h2>Filter Products</h2>
+            <h2>Filter</h2>
         </div>
         <div class="filterPrice">
             <h3>Price:</h3>

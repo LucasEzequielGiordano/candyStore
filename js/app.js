@@ -23,7 +23,8 @@ function catalogSweets() {
     let card = document.createElement("div");
     card.innerHTML = createStringCatalog();
     stock.appendChild(card);
-    createFilter()
+    addToCart()
+    // createFilter()
 }
 
 // code start

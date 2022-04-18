@@ -11,6 +11,7 @@
     font-family: 'Poppins', sans-serif;
     outline: none;
     list-style: none;
+    overflow-x: hidden;
 }
 
 /* variables */
@@ -74,7 +75,7 @@ main {
 /* filter */
 main .containerFilter {
     height: 50%;
-    width: 30%;
+    width: 20%;
     display: flex;
     flex-direction: row;
     -ms-flex-direction: row;
@@ -100,7 +101,7 @@ main .containerFilter {
 
 .title h2 {
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .containerFilter .filterPrice {
@@ -147,19 +148,21 @@ main .containerFilter {
 
 /* stock */
 main .stock {
-    width: 65%;
+    width: 55%;
     display: flex;
     flex-direction: row;
+    -ms-flex-direction: row;
+    z-index: 50;
 }
 
 main .stock div {
-    background-color: transparent;
     width: 100%;
+    background-color: transparent;
     display: flex;
     align-items: center;
     -ms-flex-align: center;
-    justify-content: center;
-    -ms-flex-line-pack: center;
+    justify-content: flex-end;
+    -ms-flex-line-pack: end;
     flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     gap: 3%;
