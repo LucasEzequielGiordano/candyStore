@@ -23,9 +23,9 @@
 }
 
 /* styles */
-html {
+/* html {
     height: 100%;
-}
+} */
 
 body {
     height: 100%;
@@ -33,9 +33,32 @@ body {
 }
 
 /* header */
-nav {
+
+header {
     height: 10%;
+    width: 100%;
     background-color: var(--color3);
+    z-index: 21;
+}
+
+nav {
+    height: 100%;
+    width: 100%;
+    background-color: var(--color3);
+    z-index: 21;
+}
+
+.navBarIndex {
+    z-index: 21;
+}
+
+#carrito {
+    height: 200%;
+    width: 50%;
+    position: fixed;
+    background-color: var(--color4);
+    left: 54%;
+    z-index: 20;
 }
 
 /* main */
@@ -44,21 +67,6 @@ main {
     width: 100%;
     background-color: var(--color4);
     display: flex;
-    flex-direction: row-reverse;
-    -ms-flex-direction: row-reverse;
-    align-items: flex-start;
-    -ms-flex-align: start;
-    justify-content: center;
-    -ms-flex-line-pack: center;
-    flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-}
-
-/* filter */
-main .containerFilter {
-    height: 50%;
-    width: 20%;
-    display: flex;
     flex-direction: row;
     -ms-flex-direction: row;
     align-items: center;
@@ -67,74 +75,14 @@ main .containerFilter {
     -ms-flex-line-pack: center;
     flex-wrap: wrap;
     -ms-flex-wrap: wrap;
-}
-
-.containerFilter .title {
-    height: 10%;
-    width: 100%;
-    display: flex;
-    align-items: flex-end;
-    -ms-flex-align: end;
-    justify-content: center;
-    -ms-flex-line-pack: center;
-    flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-}
-
-.title h2 {
-    text-align: center;
-    font-size: 25px;
-}
-
-.containerFilter .filterPrice {
-    height: 45%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    -ms-flex-direction: column;
-    align-items: center;
-    -ms-flex-align: center;
-    justify-content: center;
-    -ms-flex-line-pack: center;
-    flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-}
-
-.containerFilter .filterStock {
-    height: 45%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    -ms-flex-direction: column;
-    align-items: center;
-    -ms-flex-align: center;
-    justify-content: flex-start;
-    -ms-flex-line-pack: start;
-    flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-}
-
-.containerFilter ul {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    -ms-flex-direction: column;
-    align-items: self-start;
-    -ms-flex-align: baseline;
-    justify-content: center;
-    -ms-flex-line-pack: center;
-    flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    align-content: center;
 }
 
 /* stock */
 main .stock {
-    width: 55%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     -ms-flex-direction: row;
-    z-index: 50;
 }
 
 main .stock div {
@@ -143,16 +91,15 @@ main .stock div {
     display: flex;
     align-items: center;
     -ms-flex-align: center;
-    justify-content: flex-end;
-    -ms-flex-line-pack: end;
+    justify-content: center;
+    -ms-flex-line-pack: center;
     flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     gap: 3%;
 }
 
-/* cart */
-.cart {
+/* cart .cart {
     height: 100%;
     width: 20%;
     background-color: var(--color1);
-}
+} */

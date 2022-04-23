@@ -1,5 +1,5 @@
 // function to create the catalog
-function createStringCatalog() {
+const createStringCatalog = () => {
     let string = "";
     for (const sweet of sweets) {
         string += `
@@ -18,12 +18,12 @@ function createStringCatalog() {
 }
 
 // Function to display the cards with the "sweets".
-function catalogSweets() {
+const catalogSweets = () => {
     let stock = document.getElementById("stock");
     let card = document.createElement("div");
     card.innerHTML = createStringCatalog();
     stock.appendChild(card);
-    addToCart()
+    // addToCart()
     // createFilter()
 }
 

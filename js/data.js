@@ -30,17 +30,17 @@ console.log(sweets)
 
 // method statement
 // function to add one unit to the candy quantity
-function addSweetUnit(sweet) {
+const addSweetUnit = (sweet) => {
     sweet.quantity = sweet.quantity + 1;
 }
 
 // function to remove one unit in the candy quantity
-function removeSweetUnit(sweet) {
+const removeSweetUnit = (sweet) => {
     sweet.quantity = sweet.quantity - 1;
 }
 
 // function to update the total price of the candy
-function updateTotalPriceSweet(sweet) {
+const updateTotalPriceSweet = (sweet) => {
     sweet.totalPrice = sweet.price * sweet.quantity;
 }
 
