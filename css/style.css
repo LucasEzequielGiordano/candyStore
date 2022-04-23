@@ -11,7 +11,6 @@
     font-family: 'Poppins', sans-serif;
     outline: none;
     list-style: none;
-    overflow-x: hidden;
 }
 
 /* variables */
@@ -30,30 +29,13 @@ html {
 
 body {
     height: 100%;
+    overflow-x: hidden;
 }
 
 /* header */
-header {
+nav {
     height: 10%;
     background-color: var(--color3);
-    display: flex;
-    align-items: center;
-    -ms-flex-align: center;
-    justify-content: space-around;
-    -ms-flex-line-pack: distribute;
-    flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-}
-
-header h1 {
-    font-size: clamp(20px, 100%, 40px);
-    color: var(--color2);
-    cursor: pointer;
-}
-
-.containerIcons .imgCart {
-    height: 40px;
-    cursor: pointer;
 }
 
 /* main */
