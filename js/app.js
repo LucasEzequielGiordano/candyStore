@@ -1,6 +1,6 @@
 // function to create the catalog
 const createStringCatalog = () => {
-    let string = "";
+    let string = ""
     for (const sweet of sweets) {
         string += `
         <div class="card d-flex .justify-content-center" style="width: 18rem;">
@@ -12,17 +12,17 @@ const createStringCatalog = () => {
                 <button href="#" class="btn btn-success" id="add${sweet.id}">+ Add To Cart</button>
             </div>
         </div>
-        `;
+        `
     }
-    return string;
+    return string
 }
 
 // Function to display the cards with the "sweets".
 const catalogSweets = () => {
-    let stock = document.getElementById("stock");
-    let card = document.createElement("div");
-    card.innerHTML = createStringCatalog();
-    stock.appendChild(card);
+    let stock = document.getElementById("stock")
+    let card = document.createElement("div")
+    card.innerHTML = createStringCatalog()
+    stock.appendChild(card)
     // addToCart()
     // createFilter()
 }

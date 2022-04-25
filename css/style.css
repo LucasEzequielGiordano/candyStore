@@ -23,9 +23,9 @@
 }
 
 /* styles */
-/* html {
+html {
     height: 100%;
-} */
+}
 
 body {
     height: 100%;
@@ -63,26 +63,21 @@ nav {
 
 /* main */
 main {
-    height: 200%;
+    height: 125%;
     width: 100%;
     background-color: var(--color4);
-    display: flex;
-    flex-direction: row;
-    -ms-flex-direction: row;
-    align-items: center;
-    -ms-flex-align: center;
-    justify-content: center;
-    -ms-flex-line-pack: center;
-    flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit(150px, 1fr));
+    gap: 16px;
+    place-items: center;
 }
 
 /* stock */
 main .stock {
-    width: 100%;
+    width: 75%;
     display: flex;
-    flex-direction: row;
-    -ms-flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 main .stock div {
